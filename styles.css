@@ -1,0 +1,168 @@
+/* FICHIER CSS pour tout le site
+
+Auteur : Yanis Charikhi. Iyed Berriri, Adel Bouhamed, Karim... , Zakaria..., Yassine ..
+Date : 
+
+/*====================================
+CODE CSS DE LA PARTIE CONNECTION 
+====================================== */
+
+
+
+/* Corps général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Empêche le défilement de la page */
+    height: 100vh; /* Utilise toute la hauteur de la fenêtre du navigateur */
+    display: flex;
+    flex-direction: column; /* Organise les éléments du body en colonne */
+}
+
+/* Header avec la barre de navigation */
+header {
+    background-color: hsl(210, 29%, 24%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 10; /* Pour s'assurer que le header reste au-dessus des autres éléments */
+}
+
+/* Titre du header */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Barre de navigation horizontale */
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #3498DB;
+    border-radius: 4px;
+}
+
+/* Section principale de la page d'accueil */
+.hero {
+    background-image: url('images/image1.jpg'); /* Image de fond */
+    background-size: cover; /* Couvre toute la section */
+    background-position: center; /* Centre l'image */
+    color: white;
+    padding: 0; /* Enlève les marges et le padding autour de l'image */
+    margin: 0; /* Enlève la marge extérieure */
+    height: 100%; /* Occupe tout l'espace restant */
+    max-height: 100vh; /* Limite la hauteur à 100% de la fenêtre */
+    max-width: 100%; /* Limite la largeur à 100% de la fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Rectangle semi-transparent derrière le texte et le bouton */
+.hero .hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+    border-radius: 8px; /* Bordures arrondies pour un effet doux */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero button {
+    padding: 15px 30px;
+    background-color: #2980B9;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero button a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero button:hover {
+    background-color: #21618C;
+}
+
+.hero img {
+    display: none; /* Masque l'image dans la section hero */
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto; /* Assure que le footer est toujours en bas */
+}
+
+/* Ajout de styles supplémentaires pour les autres sections de la page */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.2em;
+}
+
+/* Styles pour les boutons dans les autres sections */
+button {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980B9;
+}
+
+#box1 {
+    background-color: hsl(210, 23%, 28%);
+    border-radius: 20px;
+    padding: 20px;
+    height: 250px;
+    width: 450px;
+}

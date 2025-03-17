@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - TELO</title>
+    <style>
+        /* Corps général de la page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden; /* Empêche le défilement de la page */
+            height: 100vh; /* Utilise toute la hauteur de la fenêtre du navigateur */
+            display: flex;
+            flex-direction: column; /* Organise les éléments du body en colonne */
+        }
+
+        /* Header avec la barre de navigation */
+        header {
+            background-color: hsl(210, 29%, 24%);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        /* Barre de navigation */
+        .navbar {
+            list-style: none;
+            margin: 0;
+            padding-top: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar li a:hover {
+            background-color: #3498DB;
+            border-radius: 4px;
+        }
+
+        /* Section connexion */
+        .connexion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .connexion-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .connexion-form h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .connexion-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .connexion-form button {
+            padding: 10px 20px;
+            background-color: #2980B9;
+            color: white;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .connexion-form button:hover {
+            background-color: #21618C;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header avec la barre de navigation -->
+    <header>
+        <h1>TELO - Plateforme de Gestion Médicale</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="dossiers.html">Dossiers Médicaux</a></li>
+                <li><a href="teleconsultation.html">Téléconsultation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">À propos de nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section de connexion -->
+    <section class="connexion">
+        <div class="connexion-form">
+            <h2>Connexion à votre compte</h2>
+            <form action="dashboard.html" method="POST">
+                <div>
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
+                </div>
+                <button type="submit">Se connecter</button>
+            </form>
+            <p><a href="#">Mot de passe oublié ?</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TELO - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
